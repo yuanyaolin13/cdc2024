@@ -1,0 +1,314 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+  margin: 0; /* Remove auto margin */
+  padding: 0; /* Ensure no padding */
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.gridwrapper {
+    height: 98vh;
+    padding: 0;
+}
+
+.thegrid {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+        "saved itinerary maps";
+    grid-template-columns: .65fr .9fr 2fr; 
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.saved, .itinerary, .maps {
+    padding: 20px;
+    font-family: "REM", sans-serif;
+}
+
+.saved {
+    grid-area: saved;
+    background-color: #eaeaea;
+}
+
+.itinerary {
+    grid-area: itinerary;
+    background-color: #3F836B;
+}
+
+.maps {
+    grid-area: maps;
+    height: 100%;
+}
+
+.myicon {
+    height: 40px; 
+    vertical-align: middle;
+}
+
+.navwrapper {
+    display: flex;
+    padding: 1vh;
+}
+
+.navwrapper h1 {
+    font-size: 40px;
+    padding-left: 10px;
+    margin-top: 20px;
+    line-height: 0;
+    vertical-align: middle;
+    color: #47856F;
+    font-family: "REM", sans-serif;
+}
+
+/* Customize Leaflet popup */
+.leaflet-popup-content-wrapper {
+    background-color: #ffffff; /* Set your desired background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    border: 2px solid #47856F; /* Optional: Add a border */
+    width: 220px;
+}
+
+.leaflet-popup-tip {
+    background-color: #f0f0f0; /* Match the background color of the popup */
+}
+
+#map {
+    height:100%;
+}
+
+.saved-location, .itinerary-location {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 8px -4px rgb(68, 70, 71);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* To space buttons evenly */
+    margin-top: 5px; /* Adds space between the title and the buttons */
+}
+
+.down-arrow-button {
+    background-color: #5182b3; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.down-arrow-button:hover {
+    background-color: #2f5378; /* Darker green on hover */
+}
+
+.down-arrow-button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+
+.itinerary-location {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.itineraryheader {
+    width: 100%; /* Full width */
+    padding: 1px; /* Padding inside the input */
+    margin: 0 auto; /* Center the search bar */
+    border: 2px solid #ffffff; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    font-family: 'REM', sans-serif; /* Custom font */
+    background-color: white;
+    line-height: 0;
+    font-size: 15px;
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-position: right 10px center; /* Position the image */
+}
+
+.itineraryheader p {
+    padding-left: 10px;
+}
+
+.add-to-saved-btn {
+    background-color: #47856F; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: "REM", sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+}
+
+.add-to-saved-btn:hover {
+    background-color: #3f6e5e; /* Darker color on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Style for the search input */
+#searchInput {
+    width: 90%; /* Full width */
+    padding: 7px; /* Padding inside the input */
+    margin: 0 auto; /* Center the search bar */
+    border: 2px solid #ffffff; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    font-family: 'REM', sans-serif; /* Custom font */
+    font-size: 15px;
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-position: right 10px center; /* Position the image */
+}
+
+/* Style for the placeholder text */
+#searchInput::placeholder {
+    color: #aaa; /* Color for the placeholder text */
+    opacity: 1; /* Ensure opacity is at full for the placeholder */
+    font-family: 'REM', sans-serif; /* Custom font for placeholder */
+}
+
+.remove-button {
+    background-color: #CB4F4F; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: "REM", sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+}
+
+.remote-button:hover {
+    background-color: #9b3535; /* Darker color on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.remove-itinerary-button {
+    background-color: #CB4F4F; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: "REM", sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+}
+
+.remote-itinerary-button:hover {
+    background-color: #9b3535; /* Darker color on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.itinerary-button {
+    background-color: #47856F; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: "REM", sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+}
+
+.itinerary-button:hover {
+    background-color: #3f6e5e; /* Darker color on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+#reviewPanel {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 15%; /* Move up to use more vertical space */
+    left: 50%;
+    transform: translate(-50%, -15%); /* Adjust position accordingly */
+    width: 400px; /* Increase width */
+    max-height: 80%; /* Increase max-height to take up more vertical space */
+    overflow-y: auto; /* Scrollable */
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px; /* Reduce padding for more content space */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#reviewPanel h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: "REM", sans-serif; /* Font family */
+
+}
+
+.review-box {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    font-family: "REM", sans-serif; /* Font family */
+}
+
+.review-button {
+    background-color: #5182b3; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: "REM", sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+
+}
+
+.review-button:hover {
+    background-color: #2f5378; /* Darker green on hover */
+}
+
+.close-review-button {
+    background-color: #CB4F4F; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    padding: 10px 15px; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline-block */
+    font-size: 16px; /* Increase font size */
+    margin-top: 10px; /* Add some margin on top */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.close-review-button:hover {
+    background-color: #9b3535; /* Darker red on hover */
+}
+
+.distance {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #5182b3;
+    border: 1px solid #3f6e5e;
+    border-radius: 5px;
+    padding: 4px;
+    width: 300px;
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff; /* Optional: Change text color */
+}

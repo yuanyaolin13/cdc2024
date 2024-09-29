@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navwrapper">
+            <img src="{{ url_for('static', filename='images/mapicon.png') }}" alt="Description of image" class="myicon">
+            <h1>London's Best</h1>
+        </div>
+    </nav>
+    <div class="gridwrapper">
+        <div class="thegrid">
+            <div class="saved">
+                <input type="text" id="searchInput" placeholder="Search saved locations..." onkeyup="searchSavedLocations()">
+                <div id="savedLocations" style="margin-top: 10px;"></div> <!-- Div to hold saved locations -->
+            </div>
+            <div class="itinerary">
+                <div class="itineraryheader">
+                    <p>Your Itinerary</p>
+                </div>
+                <div id="itineraryLocations" style="margin-top: 10px;"></div> <!-- Div to hold itinerary locations -->
+                <div id="totalDistance" style="margin-top: 10px; font-weight: bold; text-align: center;">Total Distance: 0 miles</div>                
+            </div>
+            <div class="maps" id="map"></div>  <!-- Map container -->
+        </div>
+    </div>
+    <div id="reviewPanel">
+        <h2>Reviews</h2>
+        <div id="reviewContent"></div>
+        <button class="close-review-button" onclick="closeReviewPanel()">Close</button>
+    </div>
+
+    <script>
+        let attractions = [];  // Array to store fetched attractions data
+        let savedLocations = [];  // Array to hold saved locations
+        let itineraryLocations = [];  // Array to hold itinerary locations
+        
+        // Function to calculate distance using the Haversine formula
+        function haversineDistance(lat1, lon1, lat2, lon2) {
+            const R = 3958.8; // Radius of the Earth in miles
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            return R * c; // Distance in miles
+        }
+    
+        // Function to update total distance and distances between entries
+        function updateDistances() {
+            let totalDistance = 0;
+            const itineraryDiv = document.getElementById('itineraryLocations');
+            const distanceDivs = itineraryDiv.getElementsByClassName('distance');
+    
+            // Clear previous distance divs
+            Array.from(distanceDivs).forEach(div => div.remove());
+    
+            for (let i = 0; i < itineraryLocations.length - 1; i++) {
+                const currentLocation = attractions.find(attr => attr.name === itineraryLocations[i]);
+                const nextLocation = attractions.find(attr => attr.name === itineraryLocations[i + 1]);
+    
+                if (currentLocation && nextLocation) {
+                    const distance = haversineDistance(currentLocation.lat, currentLocation.lng, nextLocation.lat, nextLocation.lng);
+                    totalDistance += distance;
+    
+                    // Create a new distance div
+                    const distanceDiv = document.createElement('div');
+                    distanceDiv.className = 'distance';
+                    distanceDiv.textContent = `Distance to next location: ${distance.toFixed(2)} miles`;
+                    
+                    // Insert the distance div after the current location
+                    itineraryDiv.insertBefore(distanceDiv, itineraryDiv.children[i * 2 + 1]); // Adjust for the distance divs
+                }
+            }
+    
+            // Update the total distance displayed
+            const totalDistanceDiv = document.getElementById('totalDistance');
+            totalDistanceDiv.textContent = `Total Distance: ${totalDistance.toFixed(2)} miles`;
+        }
+    
+        // Function to add location to saved locations
+        function addLocationToSaved(locationName) {
+            if (!savedLocations.includes(locationName)) {
+                savedLocations.push(locationName);
+                const savedLocationsDiv = document.getElementById('savedLocations');
+                const locationDiv = document.createElement('div');
+                locationDiv.className = 'saved-location';
+                locationDiv.textContent = locationName;
+    
+                // Create a remove button
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.className = 'remove-button';
+                removeButton.onclick = function() {
+                    savedLocationsDiv.removeChild(locationDiv);
+                    savedLocations = savedLocations.filter(loc => loc !== locationName);
+                };
+    
+                // Create an add to itinerary button
+                const itineraryButton = document.createElement('button');
+                itineraryButton.textContent = 'Add to Itinerary';
+                itineraryButton.className = 'itinerary-button';
+                itineraryButton.onclick = function() {
+                    addLocationToItinerary(locationName); // Keep it in saved locations
+                };
+    
+                const buttonContainer = document.createElement('div');
+                buttonContainer.className = 'button-container';
+                buttonContainer.appendChild(itineraryButton);
+                buttonContainer.appendChild(removeButton);
+                locationDiv.appendChild(buttonContainer);
+                savedLocationsDiv.appendChild(locationDiv);
+            } else {
+                alert("Location already saved!");
+            }
+        }
+    
+        // Function to add location to itinerary
+        function addLocationToItinerary(locationName) {
+            if (!itineraryLocations.includes(locationName)) {
+                itineraryLocations.push(locationName);
+                const itineraryDiv = document.getElementById('itineraryLocations');
+                const locationDiv = document.createElement('div');
+                locationDiv.className = 'itinerary-location';
+                locationDiv.textContent = locationName;
+    
+                // Create a remove button for the itinerary
+                const removeItineraryButton = document.createElement('button');
+                removeItineraryButton.textContent = 'Remove from Itinerary';
+                removeItineraryButton.className = 'remove-itinerary-button';
+                removeItineraryButton.onclick = function() {
+                    itineraryDiv.removeChild(locationDiv);
+                    itineraryLocations = itineraryLocations.filter(loc => loc !== locationName);
+                    updateDistances(); // Update distances when a location is removed
+                };
+    
+                // Create a down arrow button
+                const downArrowButton = document.createElement('button');
+                downArrowButton.textContent = '↓'; // Down arrow
+                downArrowButton.className = 'down-arrow-button';
+                downArrowButton.onclick = function() {
+                    moveDown(locationDiv);
+                };
+    
+                locationDiv.appendChild(removeItineraryButton);
+                locationDiv.appendChild(downArrowButton); // Add down arrow button
+                itineraryDiv.appendChild(locationDiv);
+                updateDistances(); // Update distances when a location is added
+            } else {
+                alert("Location already in itinerary!");
+            }
+        }
+    
+       // Function to move an itinerary entry down
+function moveDown(locationDiv) {
+    const itineraryDiv = document.getElementById('itineraryLocations');
+    const nextDiv = locationDiv.nextElementSibling; // Get the next sibling element
+
+    // Check if the next element exists and is not the distance div
+    if (nextDiv && !nextDiv.classList.contains('distance')) {
+        itineraryDiv.insertBefore(locationDiv, nextDiv.nextSibling); // Move the current element down
+        updateDistances(); // Update distances after moving
+    } else if (nextDiv) {
+        // If the next element is a distance div, find the next valid location div
+        let nextLocationDiv = nextDiv.nextElementSibling;
+        while (nextLocationDiv && nextLocationDiv.classList.contains('distance')) {
+            nextLocationDiv = nextLocationDiv.nextElementSibling;
+        }
+        if (nextLocationDiv) {
+            itineraryDiv.insertBefore(locationDiv, nextLocationDiv); // Move the current element down
+            updateDistances(); // Update distances after moving
+        }
+    }
+}
+    
+        // Function to open the review panel
+        function openReviewPanel(locationName) {
+            const location = attractions.find(attr => attr.name === locationName);
+    
+            const reviewContentDiv = document.getElementById('reviewContent');
+            reviewContentDiv.innerHTML = '';  // Clear previous reviews
+    
+            if (location && location.reviews) {
+                location.reviews.forEach(review => {
+                    const reviewBox = document.createElement('div');
+                    reviewBox.className = 'review-box';
+                    reviewBox.textContent = review;
+                    reviewContentDiv.appendChild(reviewBox);
+                });
+            }
+    
+            const reviewPanel = document.getElementById('reviewPanel');
+            reviewPanel.style.display = 'block';  // Make panel visible
+        }
+    
+        // Function to close the review panel
+        function closeReviewPanel() {
+            const reviewPanel = document.getElementById('reviewPanel');
+            reviewPanel.style.display = 'none';  // Hide panel
+        }
+    
+        // Initialize the map
+        var map = L.map('map').setView([51.505, -0.09], 10);
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+    
+        // Fetch attractions and set up markers
+        fetch('/api/getAttractions')
+            .then(response => response.json())
+            .then(data => {
+                attractions = data;  // Store fetched attractions
+                data.forEach(attraction => {
+                    var marker = L.marker([attraction.lat, attraction.lng]).addTo(map);
+                    marker.bindPopup(`
+                        <b>${attraction.name}</b><br><br>
+                        ${attraction.address}<br><br>
+                        <div style="display: flex; gap: 5px;"> <!-- Flex container for buttons -->
+                            <button class="add-to-saved-btn" onclick="addLocationToSaved('${attraction.name}')">Add to Saved</button>
+                            <button class="review-button" onclick="openReviewPanel('${attraction.name}')">View Reviews</button>
+                        </div>
+                    `);
+                });
+            })
+            .catch(error => console.error('Error fetching attractions:', error));
+    
+        // Function to search through saved locations
+        function searchSavedLocations() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const savedLocationsDiv = document.getElementById('savedLocations');
+            const savedLocationItems = savedLocationsDiv.getElementsByClassName('saved-location');
+    
+            for (let i = 0; i < savedLocationItems.length; i++) {
+                const locationItem = savedLocationItems[i];
+                const text = locationItem.textContent.toLowerCase();
+                locationItem.style.display = text.includes(input) ? '' : 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
