@@ -25,6 +25,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "../../../../Library/Caches/JetBrains/IntelliJIdea2023.2/javascript/typings/node/22.7.4/node_modules/@types/node/globals.d.ts"
+    "../../../../Library/Caches/JetBrains/IntelliJIdea2023.2/javascript/typings/node/22.7.4/node_modules/@types/node/globals.d.ts",
+    "../../Library/Caches/JetBrains/PyCharm2024.1/javascript/typings/node/22.7.4/node_modules/@types/node/globals.d.ts"
   ]
 }
