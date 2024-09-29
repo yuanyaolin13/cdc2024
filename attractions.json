@@ -1,0 +1,1021 @@
+[
+    {
+        "name": "AR Motive",
+        "address": "Dephna House, 119 Neasden Lane, London, United Kingdom",
+        "id": 245821,
+        "lng": -0.249997,
+        "lat": 51.554529,
+        "reviews": [
+            "Wonderful although i work here myself its amazing to get the public&#39;s view of our service and i am pleased with the way all employees at AR Motive Operate"
+        ],
+        "sentiment_score": 0.7
+    },
+    {
+        "name": "Altab Ali Park",
+        "address": "Alder Street, London, United Kingdom",
+        "id": 36688,
+        "lng": -0.068416,
+        "lat": 51.516138,
+        "reviews": [
+            "Very beautiful and enjoyable"
+        ],
+        "sentiment_score": 0.75
+    },
+    {
+        "name": "Apiary Studios",
+        "address": "458 Hackney Road, London, United Kingdom",
+        "id": 248293,
+        "lng": -0.059006,
+        "lat": 51.532215,
+        "reviews": [
+            "A great venue with ultra helpful staff, thanks Les &amp; Matt.",
+            "Great spaces to work in, friendly people and good location!",
+            "a great place to work and play!"
+        ],
+        "sentiment_score": 0.7277777778
+    },
+    {
+        "name": "Aqua Sheko",
+        "address": "14 Holland Street, London, United Kingdom",
+        "id": 246336,
+        "lng": -0.188917,
+        "lat": 51.502256,
+        "reviews": [
+            "Best ever fish spa in London!"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Aquilla",
+        "address": "The Rembrandt Hotel, Thurloe Place, London, United Kingdom",
+        "id": 247420,
+        "lng": -0.170294,
+        "lat": 51.496134,
+        "reviews": [
+            "I cam here for a massage. An amazing club, very clean, quiet, unpretentious.The pool was a delight. Highly recommended",
+            "Great place for fitness",
+            "Perfectly equipped and well-kept. Recommend it!"
+        ],
+        "sentiment_score": 0.7030555556
+    },
+    {
+        "name": "Arsenal Museum",
+        "address": "75 Drayton Park, London, United Kingdom",
+        "id": 67828,
+        "lng": -0.10749,
+        "lat": 51.554514,
+        "reviews": [
+            "Best football club in the world"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Ashburton Playing Fields",
+        "address": "Croydon, United Kingdom",
+        "id": 64352,
+        "lng": -0.054456,
+        "lat": 51.384328,
+        "reviews": [
+            "great pics got beautifull memorys on this field...."
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Barham Park",
+        "address": "Harrow Road, Sudbury, United Kingdom",
+        "id": 48406,
+        "lng": -0.312338,
+        "lat": 51.5526,
+        "reviews": [
+            "great place to go to"
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Barnet Museum",
+        "address": "Barnet, United Kingdom",
+        "id": 52039,
+        "lng": -0.202451,
+        "lat": 51.652843,
+        "reviews": [
+            "Very good, worth checking out.",
+            "I rate them as very good indeed."
+        ],
+        "sentiment_score": 0.7575
+    },
+    {
+        "name": "Bedford's Park Visitor Centre",
+        "address": "United Kingdom",
+        "id": 248029,
+        "lng": 0.190565,
+        "lat": 51.615589,
+        "reviews": [
+            "excellent for all sorts of wildlife its a great day out"
+        ],
+        "sentiment_score": 0.9
+    },
+    {
+        "name": "Boujis",
+        "address": "43 Thurloe Street, London, United Kingdom",
+        "id": 36147,
+        "lng": -0.174405,
+        "lat": 51.494442,
+        "reviews": [
+            "I LOVE BOUJIS!!!!!!!! Best nightclub in London - Fact."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Brookside",
+        "address": "United Kingdom",
+        "id": 245656,
+        "lng": -0.393372,
+        "lat": 51.520984,
+        "reviews": [
+            "The school is excellent."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Burgess Park",
+        "address": "81 Picton Street, London, United Kingdom",
+        "id": 216932,
+        "lng": -0.084052,
+        "lat": 51.48427,
+        "reviews": [
+            "Since they have done it up real nice park"
+        ],
+        "sentiment_score": 0.9
+    },
+    {
+        "name": "Bushy Park",
+        "address": "London, United Kingdom",
+        "id": 248947,
+        "lng": -0.332851,
+        "lat": 51.409325,
+        "reviews": [
+            "great place for walking dogs watch out for the deer good place to meet people excellent place for a picnic",
+            "Wonderful park for family time out.",
+            "As nice as Richmond Park! Beautiful place!",
+            "Lovely place to go."
+        ],
+        "sentiment_score": 0.8020833333
+    },
+    {
+        "name": "Caledonian Park",
+        "address": "London, United Kingdom",
+        "id": 45959,
+        "lng": -0.12236,
+        "lat": 51.546819,
+        "reviews": [
+            "great very impressed"
+        ],
+        "sentiment_score": 0.9
+    },
+    {
+        "name": "Central Park",
+        "address": "London, United Kingdom",
+        "id": 55206,
+        "lng": 0.053575,
+        "lat": 51.528795,
+        "reviews": [
+            "beautiful park loved visiting"
+        ],
+        "sentiment_score": 0.775
+    },
+    {
+        "name": "Copthall Playing Fields",
+        "address": "London, United Kingdom",
+        "id": 245406,
+        "lng": -0.227688,
+        "lat": 51.601406,
+        "reviews": [
+            "The site of the greatest rugby stadium in London."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Crystal Clubs",
+        "address": "1 Poppin Business Centre, Southway, Wembley, United Kingdom",
+        "id": 78130,
+        "lng": -0.275513,
+        "lat": 51.555111,
+        "reviews": [
+            "Good Venue, Spacious and Good Management. Ideal for weeknights."
+        ],
+        "sentiment_score": 0.7666666667
+    },
+    {
+        "name": "Crystal Palace Concert Bowl",
+        "address": "London, United Kingdom",
+        "id": 46382,
+        "lng": -0.070254,
+        "lat": 51.424536,
+        "reviews": [
+            "Excellent space. The Kenwood of the south!"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Curious Duke Gallery",
+        "address": "207 Whitecross Street, London, United Kingdom",
+        "id": 246963,
+        "lng": -0.093834,
+        "lat": 51.524164,
+        "reviews": [
+            "Excellent gallery - wonderful use of space. Especially loved the Nathan Bowen pieces! If someone was to ask me where to buy affordable art in London I would definitely recommend this as one of my galleries of choice."
+        ],
+        "sentiment_score": 0.75
+    },
+    {
+        "name": "David Aaron Ancient Arts",
+        "address": "22 Berkeley Square, London, United Kingdom",
+        "id": 247171,
+        "lng": -0.146077,
+        "lat": 51.509097,
+        "reviews": [
+            "Great dealer with always very interesting items"
+        ],
+        "sentiment_score": 0.725
+    },
+    {
+        "name": "David Lloyd Hampton",
+        "address": "Staines Road, Hampton, United Kingdom",
+        "id": 40733,
+        "lng": -0.372843,
+        "lat": 51.436582,
+        "reviews": [
+            "Good facilities and excellent staff"
+        ],
+        "sentiment_score": 0.85
+    },
+    {
+        "name": "Dulwich Park",
+        "address": "College Road, London, United Kingdom",
+        "id": 45759,
+        "lng": -0.077581,
+        "lat": 51.445371,
+        "reviews": [
+            "Dulwich park is the most fantastic place. The people are nice the park is great and there is so many things to do there!!! My family love Dulwich Park",
+            "Great for dog walks, bike rides just a great space in London but feels like the country"
+        ],
+        "sentiment_score": 0.7147135417
+    },
+    {
+        "name": "Ealing Lawn Tennis Club",
+        "address": "Daniel Road (off Creffield Road), Ealing, London, United Kingdom",
+        "id": 63187,
+        "lng": -0.287714,
+        "lat": 51.512643,
+        "reviews": [
+            "Great place to play tennis"
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Eastcote House Grounds",
+        "address": "United Kingdom",
+        "id": 80293,
+        "lng": -0.403235,
+        "lat": 51.586986,
+        "reviews": [
+            "Delightful relaxing spot with dovecot and walled garden."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "EasyGym",
+        "address": "Winston Way, Ilford, United Kingdom",
+        "id": 248224,
+        "lng": 0.070702,
+        "lat": 51.556976,
+        "reviews": [
+            "Great gym at a great price! All the machines you can think of along with free weights area. Cardio machine have integrated television and internet facility but cost an extra \u00a32 a month.....as you would expect from the &#39;Easy....&#39; brand",
+            "Brilliant"
+        ],
+        "sentiment_score": 0.725
+    },
+    {
+        "name": "Emirates Aviation Experience",
+        "address": "Edmund Halley Way, London, United Kingdom",
+        "id": 79994,
+        "lng": 0.00806,
+        "lat": 51.499443,
+        "reviews": [
+            "A wonderful experience!"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Fairlop Waters Country Park",
+        "address": "Ilford, United Kingdom",
+        "id": 247987,
+        "lng": 0.106515,
+        "lat": 51.593713,
+        "reviews": [
+            "Great place to bring the kids!"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Gagliardi Gallery",
+        "address": "509 King's Road, London, United Kingdom",
+        "id": 249055,
+        "lng": -0.184018,
+        "lat": 51.480863,
+        "reviews": [
+            "Excellent and tasteful collection."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Golden Square",
+        "address": "London, United Kingdom",
+        "id": 35628,
+        "lng": -0.137472,
+        "lat": 51.511362,
+        "reviews": [
+            "Great Park. Relaxing Vibes. Table tennis is incredible."
+        ],
+        "sentiment_score": 0.85
+    },
+    {
+        "name": "Golders Hill Park Deer Enclosure",
+        "address": "London, United Kingdom",
+        "id": 56074,
+        "lng": -0.188209,
+        "lat": 51.566292,
+        "reviews": [
+            "Very beautiful park with lots of activities for kids and parent."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Gunnersbury Park",
+        "address": "Pope's Lane, London, United Kingdom",
+        "id": 53622,
+        "lng": -0.292511,
+        "lat": 51.497897,
+        "reviews": [
+            "Good quality of grounds staff offering help whenever you want.",
+            "Beautiful restaurant in a beautiful location. Good food and great selection of beverages",
+            "Great walk in beautiful surroundings!"
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Gymbox Bank",
+        "address": "71 Lombard Street, London, United Kingdom",
+        "id": 74206,
+        "lng": -0.087712,
+        "lat": 51.512898,
+        "reviews": [
+            "I was really impressed by the weight area here."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Hazelwood Sports Club",
+        "address": "Ridge Ave, London, Winchmore Hill, United Kingdom",
+        "id": 47044,
+        "lng": -0.087212,
+        "lat": 51.637953,
+        "reviews": [
+            "Great club! Lovely people!"
+        ],
+        "sentiment_score": 0.8125
+    },
+    {
+        "name": "Holland Park Salon",
+        "address": "31 St Anns Road, London, United Kingdom",
+        "id": 35574,
+        "lng": -0.204154,
+        "lat": 51.503005,
+        "reviews": [
+            "One of the most beautiful parks in London-well worth a visit. Holland Walk is amazing.",
+            "best place in London"
+        ],
+        "sentiment_score": 0.78125
+    },
+    {
+        "name": "Imperial War Museum",
+        "address": "Lambeth Road, London, United Kingdom",
+        "id": 35775,
+        "lng": -0.108597,
+        "lat": 51.496234,
+        "reviews": [
+            "This is thr secound best museium in the world that i have been 2 it tells the history in good detail thos is a must see"
+        ],
+        "sentiment_score": 0.85
+    },
+    {
+        "name": "Inwood Park",
+        "address": "Inwood Road, Hounslow, United Kingdom",
+        "id": 65676,
+        "lng": -0.355172,
+        "lat": 51.467508,
+        "reviews": [
+            "Wonderful park with excellent well maintained play area. It has a very good padding pool and sand pit."
+        ],
+        "sentiment_score": 0.97
+    },
+    {
+        "name": "Kelsey Park",
+        "address": "Manor Way, London, United Kingdom",
+        "id": 36933,
+        "lng": -0.023,
+        "lat": 51.402,
+        "reviews": [
+            "Very nice place one can just sit in the sun and relax",
+            "very nice place for kids"
+        ],
+        "sentiment_score": 0.78
+    },
+    {
+        "name": "Kidspace",
+        "address": "619 Purley Way, Croydon, United Kingdom",
+        "id": 46973,
+        "lng": -0.115905,
+        "lat": 51.35682,
+        "reviews": [
+            "Had a birthday party at kidspace and loved it!"
+        ],
+        "sentiment_score": 0.875
+    },
+    {
+        "name": "Kyoto Garden",
+        "address": "100 Holland Park Avenue, London, United Kingdom",
+        "id": 43132,
+        "lng": -0.204661,
+        "lat": 51.503045,
+        "reviews": [
+            "Spectacular place and the area is probably the best anywhere"
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "La Pollera Colora",
+        "address": "Titos, 4-6 London Bridge Street, London Bridge, London, SE1 9SG, United Kingdom",
+        "id": 247778,
+        "lng": -0.088504,
+        "lat": 51.505459,
+        "reviews": [
+            "Brilliant time everytime we go. Latin admosphere"
+        ],
+        "sentiment_score": 0.9
+    },
+    {
+        "name": "Lampton Park",
+        "address": "Hounslow, United Kingdom",
+        "id": 46702,
+        "lng": -0.372593,
+        "lat": 51.474349,
+        "reviews": [
+            "Perfect I love to play football there"
+        ],
+        "sentiment_score": 0.75
+    },
+    {
+        "name": "Las Vagas",
+        "address": "89-91 Wardour Street, London, United Kingdom",
+        "id": 247564,
+        "lng": -0.133661,
+        "lat": 51.512696,
+        "reviews": [
+            "Lovely place! One of my favourite things are the ultra violet pool balls and the fruit slot machines! Service is flawless and I managed to win a buck or two!"
+        ],
+        "sentiment_score": 0.9270833333
+    },
+    {
+        "name": "Lazarides",
+        "address": "11 Rathbone Place, London, United Kingdom",
+        "id": 246836,
+        "lng": -0.133371,
+        "lat": 51.516953,
+        "reviews": [
+            "One of the best galleries in london"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Loewe Hermanos",
+        "address": "125 Mount St, London, United Kingdom",
+        "id": 247050,
+        "lng": -0.148173,
+        "lat": 51.510121,
+        "reviews": [
+            "Lovely staff, incredible customer service!!"
+        ],
+        "sentiment_score": 0.75
+    },
+    {
+        "name": "London College Of Communication",
+        "address": "Elephant & Castle, London, United Kingdom",
+        "id": 247857,
+        "lng": -0.101243,
+        "lat": 51.49446,
+        "reviews": [
+            "Great place to study. Helpful tutors. Loved it!",
+            "Like the way this college does its tweeting. Went to a couple of the summer shows of student exhibits and it was so amazing. Looks like they put a lot into helping students display their work."
+        ],
+        "sentiment_score": 0.71875
+    },
+    {
+        "name": "London Grounds and Garden Maintenance",
+        "address": "19 Warlters Close, London, United Kingdom",
+        "id": 246034,
+        "lng": -0.119696,
+        "lat": 51.555704,
+        "reviews": [
+            "Great Team. I would recommend NLG Landscaping to anyone without hesitation"
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Lord's, Middlesex C.C.C. Practice Ground",
+        "address": "London, United Kingdom",
+        "id": 246423,
+        "lng": -0.171034,
+        "lat": 51.53049,
+        "reviews": [
+            "What a great place."
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Maryon Wilson Animal Park",
+        "address": "Flamsteed Road, London, United Kingdom",
+        "id": 248679,
+        "lng": 0.043754,
+        "lat": 51.486033,
+        "reviews": [
+            "Absolutely brilliant"
+        ],
+        "sentiment_score": 0.9
+    },
+    {
+        "name": "Mauger Modern Art",
+        "address": "81 Rochester Row, London, United Kingdom",
+        "id": 247511,
+        "lng": -0.137474,
+        "lat": 51.493237,
+        "reviews": [
+            "Been to some great galleries, but this one is a gem, recommend a visit."
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Mill Hill Rugby Club",
+        "address": "London, United Kingdom",
+        "id": 245401,
+        "lng": -0.230027,
+        "lat": 51.604413,
+        "reviews": [
+            "Great club. Friendly people. Wonderful atmosphere. All levels are welcome at Mill Hill."
+        ],
+        "sentiment_score": 0.74375
+    },
+    {
+        "name": "Mudchute Park",
+        "address": "London, United Kingdom",
+        "id": 35710,
+        "lng": -0.010989,
+        "lat": 51.492014,
+        "reviews": [
+            "Excellent place to visit with the kids we love the farm we go all the time."
+        ],
+        "sentiment_score": 0.75
+    },
+    {
+        "name": "Naval & Military Club",
+        "address": "4 Saint James's Square, London, United Kingdom",
+        "id": 247671,
+        "lng": -0.134922,
+        "lat": 51.508067,
+        "reviews": [
+            "Excellent experience about all: service, food, atmosphere, ect. very very good."
+        ],
+        "sentiment_score": 0.955
+    },
+    {
+        "name": "Neverland Ranch",
+        "address": "30 Lockwood Place, London, United Kingdom",
+        "id": 247959,
+        "lng": -0.016122,
+        "lat": 51.608502,
+        "reviews": [
+            "i love michael jackson he is the best for ever"
+        ],
+        "sentiment_score": 0.75
+    },
+    {
+        "name": "Orleans House Gallery",
+        "address": "United Kingdom",
+        "id": 36669,
+        "lng": -0.319696,
+        "lat": 51.447594,
+        "reviews": [
+            "Had my wedding here in september 2013, it was drizzling on the day but the ladies were brilliant, well organised, so helpful it was absolutely fantastic wonderful venue and wonderful team !!! Thank you for the memories xxx"
+        ],
+        "sentiment_score": 0.825
+    },
+    {
+        "name": "PM Gallery & House",
+        "address": "Walpole Park, Mattock Lane, London, United Kingdom",
+        "id": 245710,
+        "lng": -0.307122,
+        "lat": 51.511019,
+        "reviews": [
+            "My friend used this venue for her wedding reception. Although she had to hire every thing &amp; decorate it herself it was beautiful place to hold a reception."
+        ],
+        "sentiment_score": 0.85
+    },
+    {
+        "name": "Paradise Gardens",
+        "address": "Paradise Row, London, United Kingdom",
+        "id": 248330,
+        "lng": -0.055746,
+        "lat": 51.527987,
+        "reviews": [
+            "Great day out, meet lots people."
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Parliament Square",
+        "address": "London, United Kingdom",
+        "id": 43846,
+        "lng": -0.126826,
+        "lat": 51.500655,
+        "reviews": [
+            "One of the best camp sites in the UK."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Plus One Gallery",
+        "address": "89-91 Pimlico Road, London, United Kingdom",
+        "id": 247501,
+        "lng": -0.154406,
+        "lat": 51.490095,
+        "reviews": [
+            "Photo realism at its best"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Portobello Green Fitness Club",
+        "address": "3-5 Thorpe Close, London, United Kingdom",
+        "id": 246160,
+        "lng": -0.20824,
+        "lat": 51.518381,
+        "reviews": [
+            "Great staff, great members, great gym!"
+        ],
+        "sentiment_score": 0.8666666667
+    },
+    {
+        "name": "Printexpert.Co.Uk",
+        "address": "Waltham Park Way, London, United Kingdom",
+        "id": 247962,
+        "lng": -0.020915,
+        "lat": 51.601119,
+        "reviews": [
+            "hi the best flyer printers in the uk no1"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Putney Heath",
+        "address": "London, United Kingdom",
+        "id": 249161,
+        "lng": -0.23269,
+        "lat": 51.450261,
+        "reviews": [
+            "the perfect place to hide from the hussel and bussel of the london."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Queen Mother Sports Centre",
+        "address": "223 Vauxhall Bridge Road, London, United Kingdom",
+        "id": 247494,
+        "lng": -0.140461,
+        "lat": 51.49375,
+        "reviews": [
+            "I try not to let myself lose shape and this gym is always my best choice. Every now and then I come here for a refreshing workout. The equipment is in good condition and there is always room for all the people who visit."
+        ],
+        "sentiment_score": 0.7333333333
+    },
+    {
+        "name": "Redbridge Cycling Centre",
+        "address": "Forest Road, Ilford, United Kingdom",
+        "id": 247985,
+        "lng": 0.129508,
+        "lat": 51.604562,
+        "reviews": [
+            "Brilliant place, would appreciate an improvement in the spelling of the word &quot;cycling&quot; however."
+        ],
+        "sentiment_score": 0.9
+    },
+    {
+        "name": "Richmond Green",
+        "address": "Richmond, United Kingdom",
+        "id": 39565,
+        "lng": -0.306944,
+        "lat": 51.461667,
+        "reviews": [
+            "Great place for being close with the mother nature!"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Soho Square",
+        "address": "London, United Kingdom",
+        "id": 35195,
+        "lng": -0.132144,
+        "lat": 51.51532,
+        "reviews": [
+            "Great place to relax in summer"
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "South London Gallery",
+        "address": "67 Peckham Road, London, United Kingdom",
+        "id": 35768,
+        "lng": -0.079399,
+        "lat": 51.474117,
+        "reviews": [
+            "Very nice gallery with a very nice cafe attached...",
+            "Lovely gallery, great atmosphere, adorable artworks!"
+        ],
+        "sentiment_score": 0.7108333333
+    },
+    {
+        "name": "Stars Gyms Ltd",
+        "address": "Unit 5, Albion Riverside Building, 8 Hester Road, London, United Kingdom",
+        "id": 249191,
+        "lng": -0.168892,
+        "lat": 51.480554,
+        "reviews": [
+            "beautiful gym with great MMA, Brazilian Jiu-Jitsu and Muay Thai. Best gym i&#39;ve seen in london"
+        ],
+        "sentiment_score": 0.8833333333
+    },
+    {
+        "name": "T Hats Gallery",
+        "address": "57 Heath Way, Erith, United Kingdom",
+        "id": 250094,
+        "lng": 0.166119,
+        "lat": 51.470275,
+        "reviews": [
+            "Beautiful bespoke hats and fascinators, excellent service."
+        ],
+        "sentiment_score": 0.925
+    },
+    {
+        "name": "Telegraph Hill",
+        "address": "Pepys Road, London, United Kingdom",
+        "id": 40338,
+        "lng": -0.04652,
+        "lat": 51.467055,
+        "reviews": [
+            "Excellent park for families."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Thames Barrier Park",
+        "address": "North Woolwich Road, London, United Kingdom",
+        "id": 38735,
+        "lng": 0.034819,
+        "lat": 51.5009,
+        "reviews": [
+            "Amazing! Plus the park is beautiful, the plants are sculpted to reflect the idea of waves, and the cafe is superb!"
+        ],
+        "sentiment_score": 0.8666666667
+    },
+    {
+        "name": "Thames Chase Forest",
+        "address": "Pike Lane, Upminster, United Kingdom",
+        "id": 44598,
+        "lng": 0.28303,
+        "lat": 51.551934,
+        "reviews": [
+            "Have got a very nice cafe. Great cakes"
+        ],
+        "sentiment_score": 0.79
+    },
+    {
+        "name": "The Church",
+        "address": "Clapham Grand, 21-25 Saint John's Hill, Clapham Junction, London, United Kingdom",
+        "id": 47278,
+        "lng": -0.169432,
+        "lat": 51.463149,
+        "reviews": [
+            "Very good party on Sundays."
+        ],
+        "sentiment_score": 0.91
+    },
+    {
+        "name": "The Movie Poster Art Gallery",
+        "address": "1 Colville Place, London, United Kingdom",
+        "id": 246855,
+        "lng": -0.134572,
+        "lat": 51.519591,
+        "reviews": [
+            "Wonderful original posters with knowledgeable staff, gifts bought for my cousins 40th birthday and one for a colleague&#39;s leaving gift, both times they arranged swift and excellent framing. Thank you!"
+        ],
+        "sentiment_score": 0.7916666667
+    },
+    {
+        "name": "The Oaks Park",
+        "address": "Banstead, United Kingdom",
+        "id": 41021,
+        "lng": -0.168582,
+        "lat": 51.338376,
+        "reviews": [
+            "Great breakfast and sandwiches. Defo recommend."
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "The Palm Beach Casino",
+        "address": "30 Berkeley Street, London, United Kingdom",
+        "id": 36422,
+        "lng": -0.14395,
+        "lat": 51.508544,
+        "reviews": [
+            "I like the Palm Beach, I think it&#39;s great. Very nice staff and people, and beautfiul, relaxing environment.",
+            "Superb staff And great atmosphere"
+        ],
+        "sentiment_score": 0.845
+    },
+    {
+        "name": "The Pilates Room",
+        "address": "London, 9 Filmer Mews, 75 Filmer Road, Fulham, London, United Kingdom",
+        "id": 249052,
+        "lng": -0.209137,
+        "lat": 51.476492,
+        "reviews": [
+            "Wonderful atmosphere in Putney and Fulham, enjoyed the class and loved the teachers."
+        ],
+        "sentiment_score": 0.7333333333
+    },
+    {
+        "name": "The Royal Mews",
+        "address": "Buckingham Palace, London, United Kingdom",
+        "id": 247491,
+        "lng": -0.144196,
+        "lat": 51.498652,
+        "reviews": [
+            "Very interesting place, I recommend the audio guide!",
+            "Exiting place. Nice collection which was well described with audio guide."
+        ],
+        "sentiment_score": 0.70625
+    },
+    {
+        "name": "The Workshop Hair & Spa Ltd",
+        "address": "12 The High Parade, Streatham High Road, London, United Kingdom",
+        "id": 249407,
+        "lng": -0.128025,
+        "lat": 51.43439,
+        "reviews": [
+            "Great service, competitive prices, and lovely smelling products ( Aveda ) lol . Will recommend to mates."
+        ],
+        "sentiment_score": 0.7
+    },
+    {
+        "name": "Tower Hamlets Cemetery Park",
+        "address": "Southern Grove, London, United Kingdom",
+        "id": 35727,
+        "lng": -0.027166,
+        "lat": 51.523085,
+        "reviews": [
+            "great for walking my dogs"
+        ],
+        "sentiment_score": 0.8
+    },
+    {
+        "name": "Tutu's",
+        "address": "Macadam Building, Surrey Street, London, United Kingdom",
+        "id": 247654,
+        "lng": -0.115318,
+        "lat": 51.511338,
+        "reviews": [
+            "Great food and drink. Very nice place to be."
+        ],
+        "sentiment_score": 0.79
+    },
+    {
+        "name": "V&A Museum of Childhood",
+        "address": "Cambridge Heath Road, London, United Kingdom",
+        "id": 47598,
+        "lng": -0.054937,
+        "lat": 51.529088,
+        "reviews": [
+            "Spacious place to find nice activities and to see one of the most beatiful collections of toys form all the ages. Great for all the londoners!"
+        ],
+        "sentiment_score": 0.7
+    },
+    {
+        "name": "VIVA Clinic",
+        "address": "102 Harley Street, London, United Kingdom",
+        "id": 246548,
+        "lng": -0.147829,
+        "lat": 51.521212,
+        "reviews": [
+            "I love visiting Dr Patel at VIVA clinic. He has been my doctor for 3 years since coming to the UK. My skin is actually perfect now and I will always take his advice. I have no acne breakouts anymore. EVER!"
+        ],
+        "sentiment_score": 0.75
+    },
+    {
+        "name": "Vale Farm Sports Ground",
+        "address": "Wembley, United Kingdom",
+        "id": 245607,
+        "lng": -0.313207,
+        "lat": 51.561702,
+        "reviews": [
+            "it is a very good place to go to if i was.asked to rate it i would rate it 5 out of 5."
+        ],
+        "sentiment_score": 0.91
+    },
+    {
+        "name": "Vervena Laser & Beauty Clinic",
+        "address": "126 West End Lane, London, United Kingdom",
+        "id": 245848,
+        "lng": -0.190948,
+        "lat": 51.547265,
+        "reviews": [
+            "This is the best place ever, clean with amazing people working there.. Going there for a year and I will continue... The owner very nice and open towards people. Aneta is just amazing in all... laser..facials... massages... just the perfect place to spend &#39;me myself and I time&#39; very happy I found them.... best regards Daria W."
+        ],
+        "sentiment_score": 0.7051851852
+    },
+    {
+        "name": "Virgin Active - Barbican",
+        "address": "97 Aldersgate Street, London, United Kingdom",
+        "id": 246978,
+        "lng": -0.097206,
+        "lat": 51.520234,
+        "reviews": [
+            "Best gym in London."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Virgin Active - Tower Bridge",
+        "address": "Tower Bridge, Ibex House, 1 Haydon Street, London, United Kingdom",
+        "id": 248551,
+        "lng": -0.074704,
+        "lat": 51.511978,
+        "reviews": [
+            "Best gym in Tower Hill area. Has everything"
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Wellington Club",
+        "address": "116A Knightsbridge, London, United Kingdom",
+        "id": 247023,
+        "lng": -0.162606,
+        "lat": 51.501871,
+        "reviews": [
+            "Best club around. good vibes"
+        ],
+        "sentiment_score": 0.85
+    },
+    {
+        "name": "Weston William Gallery Ltd",
+        "address": "7 Royal Academy of Arts, West Yard Entrance, London, United Kingdom",
+        "id": 247230,
+        "lng": -0.141637,
+        "lat": 51.509004,
+        "reviews": [
+            "Helpful staff, excellent collection of Picasso and Matisse."
+        ],
+        "sentiment_score": 1.0
+    },
+    {
+        "name": "Wick Woodland",
+        "address": "London, United Kingdom",
+        "id": 248166,
+        "lng": -0.024231,
+        "lat": 51.551153,
+        "reviews": [
+            "Forest Kids Hackney met here and we loved it!"
+        ],
+        "sentiment_score": 0.875
+    },
+    {
+        "name": "Zumba Northwood",
+        "address": "Orion Court, 255 Hale Lane, Edgware, United Kingdom",
+        "id": 245355,
+        "lng": -0.270568,
+        "lat": 51.618319,
+        "reviews": [
+            "Amazing classes. Thank you!"
+        ],
+        "sentiment_score": 0.75
+    }
+]
