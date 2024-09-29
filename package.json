@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "leaflet": "^1.9.4",
+    "mongodb": "^6.9.0",
     "vue": "^3.4.37"
   },
   "devDependencies": {

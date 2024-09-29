@@ -1,1 +1,1 @@
-{"root":["./src/main.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/map.vue"],"version":"5.6.2"}
+{"root":["./src/main.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/map.vue","../../../../library/caches/jetbrains/intellijidea2023.2/javascript/typings/node/22.7.4/node_modules/@types/node/globals.d.ts"],"version":"5.6.2"}
